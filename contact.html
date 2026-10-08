@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+
+    <form id="contact-form" method="post" action="https://jsonplaceholder.typicode.com/posts">
+      <p>
+        <label for="name">Name</label><br />
+        <input type="text" id="name" name="name" required />
+      </p>
+      <p>
+        <label for="email">Email</label><br />
+        <input type="email" id="email" name="email" required />
+      </p>
+      <p>
+        <label for="message">Message</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </p>
+      <p>
+        <button type="submit" id="submit-btn">Send</button>
+      </p>
+    </form>
+
+    <p id="form-status" role="status" aria-live="polite"></p>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
